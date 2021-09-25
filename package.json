@@ -1,0 +1,26 @@
+{
+  "name": "record_finder",
+  "version": "1.0.0",
+  "description": "Retrieves information about a record using the Discogs API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [
+    "record",
+    "discogs"
+  ],
+  "author": "chris",
+  "license": "ISC",
+  "dependencies": {
+    "@zalando/oauth2-client-js": "^0.0.18",
+    "axios": "^0.21.4",
+    "disconnect": "^1.2.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "node-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.2.1"
+  }
+}

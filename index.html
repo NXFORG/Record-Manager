@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Manager</title>
+    <script defer src="api.js"></script>
+    <script defer src="handlers.js"></script>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        Record Manager
+    </nav>
+    <main>
+        <article>
+            <p>Welcome to Record Manager, enter an artist's name in the form below to get started.</p>
+        </article>
+        <form id="findArtist">
+            <label for="searchQuery">Artist</label>
+            <input id="searchQuery" type="text" placeholder="Enter artist's name">
+            <input type="submit">
+        </form>
+    </main> 
+    <section id="resultsDisplay">
+    </section>
+    <div id="albumInfo" class="modal">
+        <div class="modalBody">
+             <span class="close">&times;</span>
+            <ul id="modalText">
+                <li id="relYear"></li>
+                <li id="relGenre"></li>
+                <li id="relBarcode"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
