@@ -2,8 +2,7 @@
 
     const getDiscogs = async(artist) => {
       try {
-        //let response =  await fetch(`https://api.discogs.com/database/search?q=${inputedArtist}&key=${process.env.API_KEY}&secret=${process.env.API_SECRET}`);
-          let response =  await fetch(`https://api.discogs.com/database/search?q=${artist}&key=eNVFAzxhaGIJjihGvKKN&secret=jEJAhsUxGUcQtgZPDujdJMzgzzAhxFnf`);
+          let response =  await fetch(`https://api.discogs.com/database/search?q=${artist}`);
           let jsonResponse = await response.json();
           //console.log(jsonResponse);
           //return jsonResponse;
